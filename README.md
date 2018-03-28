@@ -4,4 +4,6 @@ Is a rest service which gets input as JSON and persist its indexed marked up dat
 
 
 ### instruction
-use `sbt run` to execute start service.
+use `sbt run` to initialize service.
+to change logback.xml file directory use `-Dlogger.file` while executing `sbt run` or change its value in `build.sbt`.
+it is recommended to use `ElasticSearchCleaner.sh` as a `cronjob` in order to avoid `ran out of space` Error.

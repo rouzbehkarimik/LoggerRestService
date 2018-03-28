@@ -23,11 +23,9 @@ libraryDependencies ++=Seq(
   "ch.qos.logback" % "logback-core" % "1.2.3",
   "ch.qos.logback" % "logback-classic" % "1.2.3",
   "org.slf4j" % "slf4j-api" % "1.7.25"
-
-
 )
 
-javaOptions += ("-Dlogger.file=/Users/rouzbeh/logback.xml")
-javaOptions += ("-Xms24m")
-javaOptions += ("-Xmx24m")
+javaOptions += "-Dlogger.file=/Users/rouzbeh/logback.xml"
+javaOptions += "-Xms24m"
+javaOptions += "-Xmx24m"
 enablePlugins(PlayJava)

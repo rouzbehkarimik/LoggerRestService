@@ -14,33 +14,8 @@ public class Main extends Controller {
     public Result index() {
 
 
-        String msg = "{" +
-                "\"vendor\":\"taghche\"," +
-                "\"level\":\"gold\"," +
-                "\"device\":\"ios\"," +
-                "\"action\":\"entity 5435346654 suggested\"," +
-                "\"user\":\"9876535674456\"" +
-                "}";
-        String msg2 = "{" +
-                "\"vendor\":\"taghche\"," +
-                "\"level\":\"gold\"," +
-                "\"device\":\"ios\"," +
-                "\"action\":\"entity 5435346654 visited\"," +
-                "\"user\":\"9876535674456\"" +
-                "}";
-        String msg3 = "{" +
-                "\"vendor\":\"taghche\"," +
-                "\"level\":\"gold\"," +
-                "\"device\":\"ios\"," +
-                "\"action\":\"entity 5435346654 added to basket\"," +
-                "\"user\":\"9876535674456\"" +
-                "}";
-        //System.out.println("bodyPart is:"+request().body().asText());
-        //log.warn(request().body().asText());
 
-
-        //log.warn("{\"user\":\"rouzi\",\"level\":\"gold\",\"os\":\"ios\",\"action\":\"entity 54534645 suggested\"}");
         log.warn(request().body().asText());
-        return ok("Hello World!");
+        return ok("log added");
     }
 }

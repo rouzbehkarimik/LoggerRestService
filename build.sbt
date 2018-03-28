@@ -28,8 +28,6 @@ libraryDependencies ++=Seq(
 )
 
 javaOptions += ("-Dlogger.file=/Users/rouzbeh/logback.xml")
-javaOptions += ("-Dvendor-name=digikala")
-javaOptions += ("-Dvendor-type=gold")
 javaOptions += ("-Xms24m")
 javaOptions += ("-Xmx24m")
 enablePlugins(PlayJava)

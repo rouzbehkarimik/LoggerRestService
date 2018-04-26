@@ -49,7 +49,7 @@ public class Main extends Controller {
     private JsonNode lastTimeRecommended(JsonNode node) throws Exception {
         StringBuilder finalResult = new StringBuilder();
 
-        URL url = new URL("http://monitoring.recommender.ir" + "/_search?size=1");
+        URL url = new URL("http://127.0.0.1:9200" + "/_search?size=1");
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
         conn.setDoOutput(true);
         conn.setRequestMethod("POST");

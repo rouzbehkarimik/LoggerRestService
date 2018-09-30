@@ -28,7 +28,7 @@ public class Main extends Controller {
     @BodyParser.Of(BodyParser.Text.class)
     public Result index() {
 
-        ObjectMapper om = new ObjectMapper();
+      /*  ObjectMapper om = new ObjectMapper();
         try {
             JsonNode rnode = om.readTree(request().body().asText());
             if ("0".equals(rnode.get("userId").asText("0"))) {
@@ -37,11 +37,11 @@ public class Main extends Controller {
             if (rnode.get("items").isArray() == false) throw new Exception("Not An Array");
             JsonNode finalNode = lastTimeRecommended(rnode);
             if (finalNode == null) throw new Exception("Result Empty");
-            log.warn(finalNode.toString());
+            log.warn(rnode.toString());
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace(); */
             log.warn(request().body().asText());
-        }
+
 
         return ok("log added");
     }

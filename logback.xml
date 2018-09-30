@@ -82,10 +82,7 @@
     <logger name="es-logger" level="warn" additivity="true">
         <appender name="CONSOLE" >
             <encoder>
-                <pattern>${PATTERN}</pattern> <!-- This pattern is important, otherwise it won't be the raw Elasticsearch format anymore -->
+                <pattern>${PATTERN}</pattern> <!-- This pattern is important, otherwise it won't be the raw Elasticsearch format anyomre -->
             </encoder>
         </appender>
     </logger>
-
-
-</configuration>

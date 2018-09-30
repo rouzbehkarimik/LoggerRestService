@@ -1,6 +1,6 @@
 import com.typesafe.sbt.packager.docker.{Cmd, ExecCmd}
 name := "LoggerRestService"
-
+/*hello*/
 version := "0.1"
 
 scalaVersion := "2.11.11"
